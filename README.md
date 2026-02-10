@@ -9,8 +9,6 @@ Secure Authentication: User Registration and Login using JWT (JSON Web Tokens).
 
 Task Management: Create, Read, Update, and Delete (CRUD) tasks effortlessly.
 
-Glassmorphism UI: A beautiful, modern interface with transparency and blur effects.
-
 Search and Filter: Instantly filter tasks by status (Pending/Completed) or search by text.
 
 Fully Responsive: Works perfectly on desktops, tablets, and mobile phones.
