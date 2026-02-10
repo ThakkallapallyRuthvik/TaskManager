@@ -1,6 +1,6 @@
 TaskFlow - MERN Stack Task Manager
 
-TaskFlow is a modern, full-stack task management application designed to help users organize their daily goals efficiently. Built with the MERN Stack (MongoDB, Express, React, Node.js), it features a secure authentication system, a premium Glassmorphism UI built with Tailwind CSS, and real-time task updates.
+TaskFlow is a modern, full-stack task management application designed to help users organize their daily goals efficiently. Built with the MERN Stack (MongoDB, Express, React, Node.js), it features a secure authentication system, a premium UI built with Tailwind CSS, and real-time task updates.
 
 
 FEATURES
