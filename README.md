@@ -2,6 +2,7 @@ TaskFlow - MERN Stack Task Manager
 
 TaskFlow is a modern, full-stack task management application designed to help users organize their daily goals efficiently. Built with the MERN Stack (MongoDB, Express, React, Node.js), it features a secure authentication system, a premium Glassmorphism UI built with Tailwind CSS, and real-time task updates.
 
+
 FEATURES
 
 Secure Authentication: User Registration and Login using JWT (JSON Web Tokens).
@@ -18,6 +19,7 @@ Real-time Feedback: Toast notifications for success and error messages.
 
 Profile System: Update user details securely.
 
+
 TECH STACK
 
 Frontend:
@@ -30,6 +32,7 @@ React Router DOM (Navigation)
 
 React Hot Toast (Notifications)
 
+
 Backend:
 
 Node.js and Express.js (Server)
@@ -41,6 +44,7 @@ Bcrypt.js (Password Hashing)
 JWT (Authentication)
 
 Cors (Cross-Origin Resource Sharing)
+
 
 GETTING STARTED
 
@@ -73,6 +77,7 @@ Start the React application:
 npm start
 (The app should run on http://localhost:3000)
 
+
 PROJECT STRUCTURE
 
 TaskManager/
@@ -90,6 +95,7 @@ TaskManager/
 ├── pages/       (Login, Register, Dashboard)
 └── index.css    (Tailwind Global Styles)
 
+
 API ENDPOINTS
 
 POST   /api/auth/register - Register a new user
@@ -98,6 +104,7 @@ GET    /api/tasks         - Get all tasks for logged in user
 POST   /api/tasks         - Create a new task
 PUT    /api/tasks/:id     - Update selected task
 DELETE /api/tasks/:id     - Delete selected task
+
 
 FUTURE IMPROVEMENTS AND SCALABILITY
 
@@ -122,6 +129,7 @@ Offline Mode (PWA)
 Current State: The app requires an internet connection to work.
 Problem: Users cannot check their tasks while traveling or offline.
 Solution: Convert the React app into a Progressive Web App (PWA) and use localStorage to cache tasks. Users could view and edit tasks offline, and changes would sync to the server once the connection is restored.
+
 
 AUTHOR
 
