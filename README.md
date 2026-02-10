@@ -80,7 +80,9 @@ npm start
 
 PROJECT STRUCTURE
 
+```text
 TaskManager/
+│
 ├── backend/          (API and Database Logic)
 │   ├── config/       (MongoDB Connection)
 │   ├── controllers/  (Auth and Task Logic)
@@ -89,11 +91,11 @@ TaskManager/
 │   └── server.js     (Server Entry Point)
 │
 └── frontend/         (React User Interface)
-├── src/
-├── components/  (Modals, Tables, Navbar)
-├── context/     (Global State - Auth)
-├── pages/       (Login, Register, Dashboard)
-└── index.css    (Tailwind Global Styles)
+    ├── src/
+        ├── components/  (Modals, Tables, Navbar)
+        ├── context/     (Global State - Auth)
+        ├── pages/       (Login, Register, Dashboard)
+        └── index.css    (Tailwind Global Styles)
 
 
 API ENDPOINTS
