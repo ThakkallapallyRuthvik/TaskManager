@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* --- 1. GLOBAL VIOLET BACKGROUND --- */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  min-height: 100vh;
+  
+  /* Clean, light violet-tinted base */
+  background-color: #f5f3ff; /* Very light violet */
+  
+  /* Subtle, professional mesh gradient */
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(167, 139, 250, 0.25) 0px, transparent 50%), /* Soft Purple Top Left */
+    radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.25) 0px, transparent 50%); /* Soft Violet Top Right */
+    
+  background-attachment: fixed;
+}
+
+/* --- 2. GLASS CONTAINERS --- */
+/* This makes the white boxes (Dashboard, Login) semi-transparent glass */
+.bg-white, .bg-slate-50 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 20px !important;
+}
+
+/* --- 3. NAVBAR --- */
+nav {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1) !important; /* Subtle violet line */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02) !important;
+}
+
+nav h1 {
+  color: #7c3aed !important; /* Violet-600 */
+}
+
+/* --- 4. BUTTONS (The Violet Pop) --- */
+.bg-blue-600, button[type="submit"] {
+  background-color: #7c3aed !important; /* Violet-600 */
+  background-image: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3) !important; /* Purple shadow */
+  transition: transform 0.2s !important;
+}
+
+.bg-blue-600:hover, button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(124, 58, 237, 0.4) !important;
+}
+
+/* --- 5. INPUTS --- */
+input, select, textarea {
+  background-color: #fff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  padding: 12px 16px !important;
+  transition: all 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #8b5cf6 !important; /* Violet focus */
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2) !important; /* Violet ring */
+  outline: none;
+}
+
+/* --- FIX SEARCH BAR ALIGNMENT --- */
+
+/* --- FIX SEARCH BAR ALIGNMENT (SMART VERSION) --- */
+
+/* 1. Target ONLY the Search Bar for the big padding */
+/* This ensures 'Username' stays normal */
+input[placeholder="Search tasks..."] {
+  padding-left: 45px !important; 
+}
+
+/* 2. Position the Search Icon */
+/* We look for the icon specifically inside the search container */
+div.relative > svg {
+  position: absolute !important;
+  left: 15px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 20px !important;
+  height: 20px !important;
+  color: #94a3b8 !important; /* Slate-400 */
+  pointer-events: none;
+}
+
+/* 3. Reset Normal Inputs (Just to be safe) */
+/* This forces Username, Email, and Password to align perfectly */
+input:not([placeholder="Search tasks..."]) {
+  padding-left: 16px !important;
+}
