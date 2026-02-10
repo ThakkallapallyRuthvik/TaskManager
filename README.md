@@ -21,9 +21,9 @@ Profile System: Update user details securely.
 
 
 TECH STACK
-```
-Frontend:
 
+Frontend:
+```
 React.js
 
 Tailwind CSS (Styling)
@@ -57,6 +57,7 @@ git clone https://github.com/ThakkallapallyRuthvik/TaskManager.git
 cd TaskManager
 ```
 Backend Setup
+
 Navigate to the backend folder and install dependencies.
 ```
 cd backend
@@ -75,6 +76,7 @@ Start the backend server:
 (The server should run on http://localhost:5000)
 
 Frontend Setup
+
 Open a new terminal window, navigate to the frontend folder, and install dependencies.
 ```
 cd ../frontend
