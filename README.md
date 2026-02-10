@@ -21,7 +21,7 @@ Profile System: Update user details securely.
 
 
 TECH STACK
-
+```
 Frontend:
 
 React.js
@@ -32,9 +32,10 @@ React Router DOM (Navigation)
 
 React Hot Toast (Notifications)
 
+```
 
 Backend:
-
+```
 Node.js and Express.js (Server)
 
 MongoDB and Mongoose (Database)
@@ -44,43 +45,50 @@ Bcrypt.js (Password Hashing)
 JWT (Authentication)
 
 Cors (Cross-Origin Resource Sharing)
-
+```
 
 GETTING STARTED
 
 Follow these steps to run the project locally on your machine.
 
 Clone the Repository
+```
 git clone https://github.com/ThakkallapallyRuthvik/TaskManager.git
 cd TaskManager
-
+```
 Backend Setup
 Navigate to the backend folder and install dependencies.
+```
 cd backend
 npm install
+```
 
 Create a .env file inside the backend folder and add your credentials:
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string_here
 JWT_SECRET=your_secret_key_here
+```
 
 Start the backend server:
-node server.js
+```node server.js```
 (The server should run on http://localhost:5000)
 
 Frontend Setup
 Open a new terminal window, navigate to the frontend folder, and install dependencies.
+```
 cd ../frontend
 npm install
+```
 
 Start the React application:
-npm start
+```npm start```
 (The app should run on http://localhost:3000)
 
 
 PROJECT STRUCTURE
 
-```text
+```
 TaskManager/
 │
 ├── backend/          (API and Database Logic)
@@ -96,10 +104,10 @@ TaskManager/
         ├── context/     (Global State - Auth)
         ├── pages/       (Login, Register, Dashboard)
         └── index.css    (Tailwind Global Styles)
-
+```
 
 API ENDPOINTS
-
+```
 POST   /api/auth/register - Register a new user
 POST   /api/auth/login    - Login user and get token
 GET    /api/tasks         - Get all tasks for logged in user
@@ -107,7 +115,7 @@ POST   /api/tasks         - Create a new task
 PUT    /api/tasks/:id     - Update selected task
 DELETE /api/tasks/:id     - Delete selected task
 
-
+```
 FUTURE IMPROVEMENTS AND SCALABILITY
 
 If this application were to scale to thousands of users, I would implement the following specific optimizations:
